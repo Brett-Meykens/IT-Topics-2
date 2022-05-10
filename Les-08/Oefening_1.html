@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+
+<html lang="nl">
+
+<head>
+    <title>Deel 1 oefening 5 :: Vrije Software</title>
+    <!-- noodzakelijk voor validatie-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Docent" />
+    <!--vrijdag 12 september 2020-->
+
+</head>
+
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    .compass {
+            background-image: url("Les08-Startbestanden/kompas.jpg");
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+    }
+    .label {
+        font-size: 20px;
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .noord {
+        position: fixed;
+        top: 3%;
+        left: 50%;
+        transform: translate(-50, 0%);
+    } 
+
+    .oost {
+        position: fixed;
+        top: 50%;
+        right: 3%;
+        transform: translate(0, -50%);
+        
+    }
+    .zuid {
+        position: fixed;
+        bottom: 3%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    .west {
+        position: fixed;
+        top: 50%;
+        left: 3%;
+        transform: translate(0, -50%);
+    }
+</style>
+
+<body>
+    <div class="compass"></div>
+    <div class="label noord">Noord</div>
+    <div class="label oost">Oost</div>
+    <div class="label zuid">Zuid</div>
+    <div class="label west">West</div>
+</body>

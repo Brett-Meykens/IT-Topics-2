@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+
+<html lang="nl">
+
+<head>
+    <title>Deel 1 oefening 5 :: Vrije Software</title>
+    <!-- noodzakelijk voor validatie-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Docent" />
+    <!--vrijdag 12 september 2020-->
+
+</head>
+
+<style>
+    .grid-container {
+        display: grid;
+        width: 100%;
+        grid-template-areas: 
+        "header  header"
+        "aside   main"
+        "footer  footer";
+        grid-template-columns: 200px 1fr;
+        grid-template-rows: 250px auto 250px;
+    } 
+    .header {
+        grid-area: header;
+        background-color: blue;
+    }
+    .aside {
+        grid-area: aside;
+        background-color: green;
+    }
+    .main {
+        grid-area: main;
+        background-color: black;
+    }
+    .footer {
+        grid-area: footer;
+        background-color: orange;
+    }
+</style>
+
+<body>
+    <div class="grid-container">
+        <header class="grid-item header">Header</header>
+        <aside class="grid-item aside">Aside</aside>
+        <main class="grid-item main">Main</main>
+        <footer class="grid-item footer">Footer</footer>
+    </div>
+</body>

@@ -4,20 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <title>Homepagina</title>
+    
+    <style>
+        .homepage {
+        background-image: url("pictures/paginafotos/homepage.jpg");
+        background-size: cover;
+        height: 100vh;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        }
+
+        .title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        }
+
+        .under-title {
+        position: absolute;
+        top: 55%;
+        left: 45%;
+        transform: translate(-50%, -50%);
+        color: white;
+        }
+        h3 {
+            text-align: center;
+        }
+
+        .row {
+            vertical-align: middle;
+            text-align: center;
+        }
+        .body {
+            padding: 20%;
+        }
+        p {
+            text-align: justify;
+        }
+    </style>
 </head>
 <body>
-    <a href="index.html">Home</a>
-    <a href="CV.html">CV</a>
-    <a href="Ervaring.html">Ervaring</a>
-    <a href="Hobby.html">Hobby's</a>
-    <a href="Contact.html">Contact</a>
-
-    <H1>Network &amp; System Administration </H1>
-    <H4>The job that connects people!</H4>
-
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-transparent">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="CV.html">CV</a>
+                <a class="nav-link" href="Ervaring.html">Ervaring</a>
+                <a class="nav-link" href="Hobby.html">Hobby's</a>
+                <a class="nav-link" href="Contact.html">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+       <div class="homepage">
+        <H1>Network &amp; System Administration </H1>
+        <H4>The job that connects people!</H4>
+       </div>
+    <div class="container">
     <H3>Wie ben ik?</H3>
-    <p>
+    <p class>
         Hey, Ik ben Brett Meykens. 
         Ik ben 19 jaar en volg momenteel een graduaatsopleiding systeem- & netwerkbeheer.
         Ik ben al mijn hele leven bezig met IT aangezien ik het repareren van computers met de paplepel heb meegekregen.
@@ -29,22 +86,42 @@
         positieve eigenschap is aangezien alles in de IT-wereld waterdicht moet zijn.
     </p>
     <h3>Navigeer jezelf vlotjes door mijn website</h3>
-    <a href="CV.html">
-        <img src="Pictures/Favicon/CV.png" alt="CV"/>
-    </a>
-    <p>Klik hier om mijn volledig curriculum Vitae te bekijken.</p>
-    <a href="Ervaring.html">
-        <img src="Pictures/Favicon/Ervaring.png" alt="CV"/>
-    </a>
-    <p>Ervaring is in de IT zeer belangrijk. Klik hier om te weten te komen welke ervaring ik al heb opgedaan.</p>
-    <a href="Hobby.html">
-        <img src="Pictures/Favicon/icons8-beach-ball-50.png" alt="CV"/>
-    </a>
-    <p>Ben je curieus naar mijn hobby&acute;s? Klik dan hier en kom er alles over te weten.</p>
-    <a href="Contact.html">
-        <img src="Pictures/Favicon/Contact.png" alt="CV"/>
-    </a>
-    <p>Om contact met mij op te nemen kan je hier klikken. Ik beantwoord zo snel als ik kan.</p>
 
+    <div class="row" >
+        <div class="col-4 offset-1">
+            <a class="favicon" href="CV.html">
+                <img src="Pictures/Favicon/CV.png" alt="CV"/>
+            </a>
+            <p class="text-center">Klik hier om mijn volledig curriculum Vitae te bekijken.</p>
+        </div>
+
+        <div class="col-4 offset-2">
+            <a href="Ervaring.html">
+                <img src="Pictures/Favicon/Ervaring.png" alt="CV"/>
+            </a>
+            <p class="text-center">Ervaring is in de IT zeer belangrijk. Klik hier om te weten te komen welke ervaring ik al heb opgedaan.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4 offset-1">
+            <a href="Hobby.html">
+                <img src="Pictures/Favicon/icons8-beach-ball-50.png" alt="CV"/>
+                <p class="text-center">Ben je curieus naar mijn hobby&acute;s? Klik dan hier en kom er alles over te weten.</p>
+            </a>
+        </div>
+
+        <div class="col-4 offset-2">
+            <a href="Contact.html">
+                <img src="Pictures/Favicon/Contact.png" alt="CV"/>
+            </a>
+            <p class="text-center">Om contact met mij op te nemen kan je hier klikken. Ik beantwoord zo snel als ik kan.</p>
+        </div>
+      </div>
+    </div>
+    
+    
+  
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
