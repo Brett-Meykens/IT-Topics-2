@@ -4,48 +4,117 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <title>ContactPagina</title>
+    <style>
+        .contactpage {
+            background-image: url("pictures/paginafotos/Contact.jpg");
+            background-size: cover;
+            height: 100vh;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: black;
+            font-family: 'PT Serif', serif;
+        }
+        h2 {
+            text-align: justify;
+            font-family: 'PT Serif', serif;
+        }
+        .body {
+            padding: 20%;  
+        }
+        p {
+            text-align: justify;
+            font-family: 'PT Serif', serif;
+        }
+        li {
+            font-family: 'PT Serif', serif;
+        }
+        a {
+            font-family: 'PT Serif', serif;
+        }
+        img {
+            padding: 0%;
+        }
+        h1 {
+            padding: 8rem;
+        }
+    </style>
 </head>
 <body>
-    <a href="index.html">Home</a>
-    <a href="CV.html">CV</a>
-    <a href="Ervaring.html">Ervaring</a>
-    <a href="Hobby.html">Hobby's</a>
-    <a href="Contact.html">Contact</a>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-black">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="CV.html">CV</a>
+                <a class="nav-link" href="Ervaring.html">Ervaring</a>
+                <a class="nav-link" href="Hobby.html">Hobby's</a>
+                <a class="nav-link" href="Contact.html">Contact</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <div class="container"></div>
+        <div class="contactpage">
+            <H1>Contacteer mij</H1>
+        </div>
+        <div class="row" >
+            <div class="col-6">
+                <H2 class="text-center">Contact</H3>
+                <p class="text-center">Contacteer mij via onderstaande kanalen of via het contactformulier aan de rechterkant.</p>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <img src="Pictures/Favicon/Facebook.png" alt="Facebook"/>
+                        <p class="text-center">Contacteer mij via Facebook</p>
+                    </div>
+                    <div class="col-12 text-center">
+                        <img src="Pictures/Favicon/LinkedIn.png" alt="LinkedIn"/>
+                        <p class="text-center">Via LinkedIn kan je mij ook bereiken</p>   
+                    </div>
+                    <div class="col-12 text-center">
+                        <img src="Pictures/Favicon/Telefoon.png" alt="Telefoon"/>
+                        <p class="text-center">Telefonisch ben ik ook bereikbaar</p>                       
+                    </div>
+                </div>
+            </div>
 
-    <H1>Contact</H1>
+            <div class="col-6">
+                <h2 class="text-center">Contactformulier</H1>
+                    <form>
+                        <div class="row">
+                            <div class="col">
+                                <label for="Voornaam">Voornaam</label>
+                                <input type="text" class="form-control" placeholder="Voornaam">
+                            </div>
+                            <div class="col">
+                                <label for="Achternaam">Achternaam</label>
+                                <input type="text" class="form-control" placeholder="Achternaam">
+                            </div>
+                        </div>
 
-    <p>Contacteer mij via onderstaande kanalen of via het contactformulier aan de rechterkant.</p>
+                        <div class="form-group">
+                          <label for="E-mail Adres">E-mail Adres</label>
+                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="naam@voorbeeld.be">
+                        </div>
 
-    <img src="Pictures/Favicon/Facebook.png" alt="Facebook"/>
-    <p>Contacteer mij via Facebook</p>
-    <img src="Pictures/Favicon/LinkedIn.png" alt="LinkedIn"/>
-    <p>Via LinkedIn kan je mij ook bereiken</p>
-    <img src="Pictures/Favicon/Telefoon.png" alt="Telefoon"/>
-    <p>Telefonisch ben ik ook bereikbaar</p>
-
-    <H1>Contactformulier</H1>
-    <form>
-        <div>
-            <label for="Voornaam">Uw Voornaam
-            <input type="text" name="Voornaam" id="Voornaam"></label>
-        </div>
-        <div>
-            <label for="Achternaam">Uw Achternaam
-            <input type="text" name="Achternaam" id="Achternaam"></label>
-        </div>
-        <div>
-            <label for="Mailadres">Uw Mailadres
-            <input type="email" name="Mailadres" id="Mailadres"></label>
-        </div>
-        <div>
-            <label for="Onderwerp">Onderwerp
-            <input type="text" name="Onderwerp" id="Onderwerp"></label>
-        </div>
-        <div>
-            <label for="Bericht">Uw Bericht
-            <input type="text" name="Bericht" id="Bericht"></label>
-        </div>
-    </form>
+                        <div class="form-group">
+                            <label for="Onderwerp">Onderwerp</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Onderwerp">
+                        </div>
+                        <div class="form-group">
+                            <label for="Uw Bericht">Uw Bericht</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Schrijf hier uw tekst."></textarea>
+                        </div>
+                    </form>
+            </div>
+        </div>   
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

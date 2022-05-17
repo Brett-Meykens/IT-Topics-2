@@ -4,81 +4,129 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <title>Curriculum Vitae</title>
+    <style>
+        h3 {
+            text-align: justify;
+            font-family: 'PT Serif', serif;
+        }
+        .body {
+            padding: 20%;  
+        }
+        p {
+            text-align: justify;
+            font-family: 'PT Serif', serif;
+        }
+        li {
+            font-family: 'PT Serif', serif;
+        }
+        a {
+            font-family: 'PT Serif', serif;
+        }
+        img {
+            padding: 0%;
+        }
+        .container {
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+    </style>
 </head>
 <body>
-    <a href="index.html">Home</a>
-    <a href="CV.html">CV</a>
-    <a href="Ervaring.html">Ervaring</a>
-    <a href="Hobby.html">Hobby's</a>
-    <a href="Contact.html">Contact</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="CV.html">CV</a>
+                <a class="nav-link" href="Ervaring.html">Ervaring</a>
+                <a class="nav-link" href="Hobby.html">Hobby's</a>
+                <a class="nav-link" href="Contact.html">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <div class="container">
+        <H1>Curriculum Vitae</H1>
+        <H3>Persoonlijke Gegevens</H3>
+        <div class="row" >
+            <div class="col-lg-4 col-md-6">
+                <img src="Pictures/PaginaFotos/Brett.jpg" class="img-fluid" alt="Brett">
+            </div>
 
-    <H1>Curriculum Vitae</H1>
+            <div class="col-lg-8 col-md-6">
+                <P>Naam: Brett Meykens</P>
+                <P>Woonplaats: Paal-Beringen</P>
+                <P></P>
+                <P>22-02-2003</P>
+                <P>Geboorteplaats: Heusden-Zolder</P>
+                <P>Nationaliteit: Belg</P>
+                <P>Geslacht: Man</P>
+                <p>Rijbewijs: B</p>
+            </div>
+        </div>
+        
 
-    <H3>Persoonlijke Gegevens</H3>
-    <img src="Pictures/PaginaFotos/Brett.jpg" alt="Brett"/>
-        <P>Naam: Brett Meykens</P>
-        <P>Woonplaats: Paal-Beringen</P>
-        <P></P>
-        <P>22-02-2003</P>
-        <P>Geboorteplaats: Heusden-Zolder</P>
-        <P>Nationaliteit: Belg</P>
-        <P>Geslacht: Man</P>
-        <p>Rijbewijs: B</p>
 
-    <H3>Opleidingen</H3>
-    <ul>
-        <li>Graduaat systeem- en netwerkbeheer &ndash; Thomas More &ndash; Kleinhoefstraat 4, 2440 Geel &ndash; 2021-Heden</li>
-        <li>Elektrische installatietechnieken &ndash; Spectrumcollege vzw &ndash; Bogaertsveldstraat 13, 3580 Beringen &ndash; 2019-2021</li>
-        <li>Cursus VCA-Basisveiligheid &ndash; Spectrumcollege vzw &ndash; Bogaertsveldstraat 13, 3580 Beringen &ndash; 2019-2020</li>
-        <li>Cursus EHBO &ndash; Het Vlaamse Kruis vzw afd. Beringen &ndash; 2018-2019</li>
-        <li>Elektrotechnieken &ndash; Spectrumcollege vzw &ndash; Bogaertsveldstraat 13, 3580 Beringen &ndash; 2017-2019</li>
-        <li>Techniek &ndash; Spectrumcollege vzw &ndash; Bogaertsveldstraat 14, 3580 Beringen &ndash; 2015-2017</li>
-    </ul>
+        <H3>Opleidingen</H3>
+        <ul>
+            <li>Graduaat systeem- en netwerkbeheer &ndash; Thomas More &ndash; Kleinhoefstraat 4, 2440 Geel &ndash; 2021-Heden</li>
+            <li>Elektrische installatietechnieken &ndash; Spectrumcollege vzw &ndash; Bogaertsveldstraat 13, 3580 Beringen &ndash; 2019-2021</li>
+            <li>Cursus VCA-Basisveiligheid &ndash; Spectrumcollege vzw &ndash; Bogaertsveldstraat 13, 3580 Beringen &ndash; 2019-2020</li>
+            <li>Cursus EHBO &ndash; Het Vlaamse Kruis vzw afd. Beringen &ndash; 2018-2019</li>
+            <li>Elektrotechnieken &ndash; Spectrumcollege vzw &ndash; Bogaertsveldstraat 13, 3580 Beringen &ndash; 2017-2019</li>
+            <li>Techniek &ndash; Spectrumcollege vzw &ndash; Bogaertsveldstraat 14, 3580 Beringen &ndash; 2015-2017</li>
+        </ul>
 
-    <H3>Kennis nu</H3>
-    <ul>
-        <li>Word: Goed</li>
-        <li>Word: goed</li> 
-        <li>PowerPoint: goed</li>
-        <li>Excel: goed</li>
-        <li>Internet: goed</li>
-        <li>Outlook: goed</li>
-        <li>Hardware: zeer goed (herstel pc&acute;s en bouw ze zelf)</li>
-        <li>Windows: goed (ben vertrouwd met het Windows besturingssysteem voor pc&acute;s in de GUI)</li>
-        <li>Linux: Basiskennis</li> 
-        <li>Netwerken: goed ( kan een basisnetwerk aansluiten en configureren)</li>
-    </ul>
+        <H3>Kennis nu</H3>
+        <ul>
+            <li>Word: Goed</li>
+            <li>Word: goed</li> 
+            <li>PowerPoint: goed</li>
+            <li>Excel: goed</li>
+            <li>Internet: goed</li>
+            <li>Outlook: goed</li>
+            <li>Hardware: zeer goed (herstel pc&acute;s en bouw ze zelf)</li>
+            <li>Windows: goed (ben vertrouwd met het Windows besturingssysteem voor pc&acute;s in de GUI)</li>
+            <li>Linux: Basiskennis</li> 
+            <li>Netwerken: goed ( kan een basisnetwerk aansluiten en configureren)</li>
+        </ul>
 
-    <H3>Kennis na voltooien opleiding</H3>
-    <ul>
-        <li>Word: Goed</li>
-        <li>Word: goed</li> 
-        <li>PowerPoint: goed</li>
-        <li>Excel: goed</li>
-        <li>Internet: goed</li>
-        <li>Outlook: goed</li>
-        <li>Hardware: zeer goed (herstel pc&acute;s en bouw ze zelf)</li>
-        <li>Windows: zeer goed (ben vertrouwd met het Windows besturingssysteem, zowel voor pc&acute;s als servers in de GUI en de CLI)</li>
-        <li>Linux: zeer goed (ben vertrouwd met het Windows besturingssysteem, zowel voor pc&acute;s als servers in de GUI en de CLI)</li> 
-        <li>Netwerken: zeer goed ( kan netwerken opbouwen, troubleshooten en beveiligen.))</li>
-    </ul>
+        <H3>Kennis na voltooien opleiding</H3>
+        <ul>
+            <li>Word: Goed</li>
+            <li>Word: goed</li> 
+            <li>PowerPoint: goed</li>
+            <li>Excel: goed</li>
+            <li>Internet: goed</li>
+            <li>Outlook: goed</li>
+            <li>Hardware: zeer goed (herstel pc&acute;s en bouw ze zelf)</li>
+            <li>Windows: zeer goed (ben vertrouwd met het Windows besturingssysteem, zowel voor pc&acute;s als servers in de GUI en de CLI)</li>
+            <li>Linux: zeer goed (ben vertrouwd met het Windows besturingssysteem, zowel voor pc&acute;s als servers in de GUI en de CLI)</li> 
+            <li>Netwerken: zeer goed ( kan netwerken opbouwen, troubleshooten en beveiligen.))</li>
+        </ul>
 
-    <H3>Talen</H3>
-    <ul>
-        <li>Nederlands:	Moedertaal</li>
-        <li>Engels:	Goed</li>
-        <li>Frans: Schoolkennis</li>
-    </ul>
+        <H3>Talen</H3>
+        <ul>
+            <li>Nederlands:	Moedertaal</li>
+            <li>Engels:	Goed</li>
+            <li>Frans: Schoolkennis</li>
+        </ul>
 
-    <H3>Competenties</H3>
-    <ul>
-        <li>Zeer leergierig</li>
-        <li>Ijverig</li>
-        <li>VCA-attest behaald</li>
-        <li>EHBO-cursus gevolgd</li>
-    </ul>
+        <H3>Competenties</H3>
+        <ul>
+            <li>Zeer leergierig</li>
+            <li>Ijverig</li>
+            <li>VCA-attest behaald</li>
+            <li>EHBO-cursus gevolgd</li>
+        </ul>
 
-    <p>Attesten & getuigschriften kunnen op aanvraag worden afgeleverd.</p>
+        <p>Attesten & getuigschriften kunnen op aanvraag worden afgeleverd.</p>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
