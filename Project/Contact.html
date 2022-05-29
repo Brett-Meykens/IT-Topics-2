@@ -5,43 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/CustomCssContact.css">
     <title>ContactPagina</title>
-    <style>
-        .contactpage {
-            background-image: url("pictures/paginafotos/Contact.jpg");
-            background-size: cover;
-            height: 100vh;
-            background-position: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            color: black;
-            font-family: 'PT Serif', serif;
-        }
-        h2 {
-            text-align: justify;
-            font-family: 'PT Serif', serif;
-        }
-        .body {
-            padding: 20%;  
-        }
-        p {
-            text-align: justify;
-            font-family: 'PT Serif', serif;
-        }
-        li {
-            font-family: 'PT Serif', serif;
-        }
-        a {
-            font-family: 'PT Serif', serif;
-        }
-        img {
-            padding: 0%;
-        }
-        h1 {
-            padding: 8rem;
-        }
-    </style>
+    <link rel="icon" type="image/x-icon" href="Pictures/Favicon/Own-Favicon.ico">
+    
 </head>
 <body>
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-black">
@@ -62,11 +29,11 @@
     </nav>
     <div class="container"></div>
         <div class="contactpage">
-            <H1>Contacteer mij</H1>
+            <H1 class="title">Contacteer mij</H1>
         </div>
         <div class="row" >
-            <div class="col-6">
-                <H2 class="text-center">Contact</H3>
+            <div class="col-xl-6 col-lg-12">
+                <H3 class="text-center">Contact</H3>
                 <p class="text-center">Contacteer mij via onderstaande kanalen of via het contactformulier aan de rechterkant.</p>
                 <div class="row">
                     <div class="col-12 text-center">
@@ -84,8 +51,8 @@
                 </div>
             </div>
 
-            <div class="col-6">
-                <h2 class="text-center">Contactformulier</H1>
+            <div class="col-xl-6 col-lg-12">
+                <h3 class="text-center">Contactformulier</H3>
                     <form>
                         <div class="row">
                             <div class="col">
@@ -110,6 +77,9 @@
                         <div class="form-group">
                             <label for="Uw Bericht">Uw Bericht</label>
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Schrijf hier uw tekst."></textarea>
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-dark mb-3">Versturen</button>
                         </div>
                     </form>
             </div>

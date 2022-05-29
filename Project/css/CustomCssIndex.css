@@ -1,0 +1,62 @@
+.Picturepages {
+    background-image: url("../Pictures/PaginaFotos/Homepage.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'PT Serif', serif;
+    }
+
+    .title {
+    font-size: 600%;
+    }
+    @media (max-width: 1600px) {
+      .title {font-size: 300%;
+              text-align: center;
+             }
+    } 
+    @media (max-width: 700px) {
+      .title {font-size: 150%;
+              text-align: center; 
+            }
+    } 
+
+    .undertitle {
+      font-size: 400%;
+      }
+      @media (max-width: 1600px) {
+        .undertitle {font-size: 200%;
+                    text-align: center;
+                  }
+      } 
+      @media (max-width: 700px) {
+        .undertitle {font-size: 100%;
+                    text-align: center;
+                  }
+      } 
+
+    h3 {
+      font-size: xx-large;
+      text-decoration: underline ;
+      font-style: italic;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .row {
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .container {
+      font-family: 'PT Serif', serif;
+      font-size: x-large;
+      margin-left: 5%;
+      margin-right: 5%;
+      max-width: 90%;
+      text-align: justify;
+    }
